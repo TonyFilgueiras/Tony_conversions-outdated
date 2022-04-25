@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tony's Conversions - temperature</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/weight.css">
+
+        
+    </head>
+    <body>
+        <header>
+            <h1><a href="tony_conversions.html">Tony's Conversions - Temperature</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="temperature.html"><img src="img_html/eua.png" class="flag">En</a></li>
+                    <li><a href="temperature_br.html"><img src="img_html/brasil.png" class="flag">Pt</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <ul>
+                <li>
+                    <p><input type="number" id="v1" value="0" onchange="add_symbol(), calculation()"></p>
+                    <div id="valor1"></div>
+                    <select id="medida1" onchange="add_symbol(), calculation()">
+                        <option>Fahrenheit (ºF)</option>
+                        <option>Celsius (ºC)</option>
+                        <option>Kelvin (K)</option>
+                        
+                    </select>
+
+                </li>
+                <li id="igual"><p>~</p>=</li>
+                <li>
+                    <p></p>
+                    <div id="valor2"></div>
+                    <select id="medida2" onchange="calculation()">
+                        <option>Celsius (ºC)</option>
+                        <option>Fahrenheit (ºF)</option>
+                        <option>Kelvin (K)</option>    
+                    </select>
+
+                </li>
+            </ul>
+        </main>
+        <script src="java_script/tony_conversion.js"></script>
+
+    <footer>
+        <a href="tony_conversions.html"><img src="img_html/seta.png"></a>
+        <p><a href="tony_conversions.html">Back</a></p>
+    </footer>
+    </body>
+
+</html>
