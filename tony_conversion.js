@@ -1,4 +1,4 @@
-// window.alert("This website is still under development")
+window.alert("This website is still under development")
 const F = "Fahrenheit (ºF)"
 const C = "Celsius (ºC)"
 const K = "Kelvin (K)"
